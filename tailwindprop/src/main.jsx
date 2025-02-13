@@ -7,6 +7,6 @@ createRoot(document.getElementById('root')).render(
   <>
     <App />
     <Card username={"JUTGJUgu"} bio={'male'}/>
-    <Card />
+    <Card username=''/>
   </>,
 )
