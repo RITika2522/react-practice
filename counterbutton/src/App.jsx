@@ -5,13 +5,19 @@ function App() {
   let [reader, setReader] = useState(10)
 
   let add =() =>{
-    setReader(
-      reader++
-    )
+    if (reader > 20){
+      alert("Counter cannot count more than 20")
+      return
+    }
+    setReader(reader++)
     // count++
     console.log(reader)
   }
   let minus =() =>{
+    if (reader < 0){
+      alert("Counter cannot count less than 0")
+      return
+    }
     setReader(reader--)
     // count--
     console.log(reader)
@@ -20,8 +26,8 @@ function App() {
     <>
       <h1>Count: {reader}</h1>
 
-      <button onClick={add}>+</button>
-      <button onClick={minus}>-</button>
+      <button onClick={add} disabled={reader >= 20}>+</button>
+      <button onClick={minus} disabled={reader <= 0}>-</button>
     </>
   )
 }
