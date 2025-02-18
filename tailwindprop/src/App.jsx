@@ -4,7 +4,7 @@ function App() {
   
   return (
     <>
-      <h1 className='bg-green-400 mb-5'>TailWind</h1>
+      <h1 className='bg-green-400 mb-5'>TailWind Project</h1>
     </>
   )
 }
