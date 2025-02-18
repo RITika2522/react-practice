@@ -6,10 +6,10 @@ function App() {
 
   let add =() =>{
     if (reader > 20){
-      alert("Counter cannot count more than 20")
+      alert("Counter cannot count more than 20 or equal to 20")
       return
     }
-    setReader(reader++)
+    setReader(reader++) 
     // count++
     console.log(reader)
   }
