@@ -1,11 +1,13 @@
 import React from 'react'
 
-function FirstApp() {
+function FirstApp({sal, desig, com}) {
   return (
     <div>
-        <h1>Hello world</h1>
+       <p>Salary: {sal}</p>
+       <p>Designation: {desig}</p>
+       <p>Company: {com}</p>
     </div>
-  )
+  );
 }
 
-export default FirstApp
+export default FirstApp;
